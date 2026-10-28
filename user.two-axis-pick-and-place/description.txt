@@ -1,0 +1,1 @@
+Manipolatore cartesiano Pick & Place a 2 gradi di libertà (asse orizzontale X e asse verticale Z a doppio stelo di guida) con ventosa a vuoto, sensore presenza pezzo e 3 modalità di controllo PLC (Digital Move X/Z, Analog Position, Bistable).

@@ -1,0 +1,1418 @@
+{
+  "id": "user.two-axis-pick-and-place",
+  "name": "Two-Axis Pick & Place",
+  "category": "Equipment",
+  "commsParam": "enableComms",
+  "geometry": {
+    "kind": "rig",
+    "links": [
+      {
+        "name": "basePlate",
+        "finish": "frame",
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.36,
+            0.03,
+            0.36
+          ]
+        },
+        "offset": [
+          -0.6,
+          0.015,
+          0
+        ]
+      },
+      {
+        "name": "boltFL",
+        "finish": "bolt",
+        "collision": "none",
+        "shape": {
+          "kind": "cylinder",
+          "radius": 0.014,
+          "height": 0.02
+        },
+        "offset": [
+          -0.46,
+          0.035,
+          0.14
+        ]
+      },
+      {
+        "name": "boltFR",
+        "finish": "bolt",
+        "collision": "none",
+        "shape": {
+          "kind": "cylinder",
+          "radius": 0.014,
+          "height": 0.02
+        },
+        "offset": [
+          -0.46,
+          0.035,
+          -0.14
+        ]
+      },
+      {
+        "name": "boltBL",
+        "finish": "bolt",
+        "collision": "none",
+        "shape": {
+          "kind": "cylinder",
+          "radius": 0.014,
+          "height": 0.02
+        },
+        "offset": [
+          -0.74,
+          0.035,
+          0.14
+        ]
+      },
+      {
+        "name": "boltBR",
+        "finish": "bolt",
+        "collision": "none",
+        "shape": {
+          "kind": "cylinder",
+          "radius": 0.014,
+          "height": 0.02
+        },
+        "offset": [
+          -0.74,
+          0.035,
+          -0.14
+        ]
+      },
+      {
+        "name": "column",
+        "color": [
+          0.18,
+          0.2,
+          0.22
+        ],
+        "metalness": 0.55,
+        "roughness": 0.42,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.16,
+            1.67,
+            0.16
+          ],
+          "sizeParams": [
+            {
+              "axis": 1,
+              "param": "mountHeight",
+              "scale": 1,
+              "add": 0.22000001
+            }
+          ]
+        },
+        "offset": [
+          -0.6,
+          0.865,
+          0
+        ],
+        "offsetParams": [
+          {
+            "axis": 1,
+            "param": "mountHeight",
+            "scale": 0.5,
+            "add": 0.14000001
+          }
+        ]
+      },
+      {
+        "name": "columnCap",
+        "finish": "frame",
+        "collision": "none",
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.22,
+            0.03,
+            0.22
+          ]
+        },
+        "offset": [
+          -0.6,
+          1.685,
+          0
+        ],
+        "offsetParams": [
+          {
+            "axis": 1,
+            "param": "mountHeight",
+            "scale": 1,
+            "add": 0.23500001
+          }
+        ]
+      },
+      {
+        "name": "xHousingBody",
+        "color": [
+          0.72,
+          0.12,
+          0.08
+        ],
+        "metalness": 0.22,
+        "roughness": 0.4,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.44,
+            0.22,
+            0.36
+          ]
+        },
+        "offset": [
+          -0.6,
+          1.81,
+          0
+        ],
+        "offsetParams": [
+          {
+            "axis": 1,
+            "param": "mountHeight",
+            "scale": 1,
+            "add": 0.36000001
+          }
+        ]
+      },
+      {
+        "name": "xHousingTop",
+        "collision": "none",
+        "color": [
+          0.76,
+          0.14,
+          0.09
+        ],
+        "metalness": 0.22,
+        "roughness": 0.38,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.4,
+            0.04,
+            0.32
+          ]
+        },
+        "offset": [
+          -0.6,
+          1.94,
+          0
+        ],
+        "offsetParams": [
+          {
+            "axis": 1,
+            "param": "mountHeight",
+            "scale": 1,
+            "add": 0.49000001
+          }
+        ]
+      },
+      {
+        "name": "xMotorCover",
+        "collision": "none",
+        "color": [
+          0.66,
+          0.11,
+          0.07
+        ],
+        "metalness": 0.24,
+        "roughness": 0.42,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.16,
+            0.15,
+            0.12
+          ]
+        },
+        "offset": [
+          -0.72,
+          1.83,
+          -0.22
+        ],
+        "offsetParams": [
+          {
+            "axis": 1,
+            "param": "mountHeight",
+            "scale": 1,
+            "add": 0.38000001
+          }
+        ]
+      },
+      {
+        "name": "xSideBadge",
+        "collision": "none",
+        "color": [
+          0.92,
+          0.92,
+          0.9
+        ],
+        "metalness": 0.05,
+        "roughness": 0.5,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.09,
+            0.07,
+            0.006
+          ]
+        },
+        "offset": [
+          -0.58,
+          1.8,
+          0.182
+        ],
+        "offsetParams": [
+          {
+            "axis": 1,
+            "param": "mountHeight",
+            "scale": 1,
+            "add": 0.35000001
+          }
+        ]
+      },
+      {
+        "name": "xCollarFront",
+        "collision": "none",
+        "color": [
+          0.16,
+          0.18,
+          0.2
+        ],
+        "metalness": 0.5,
+        "roughness": 0.4,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.02,
+            0.15,
+            0.15
+          ]
+        },
+        "offset": [
+          -0.375,
+          1.81,
+          0
+        ],
+        "offsetParams": [
+          {
+            "axis": 1,
+            "param": "mountHeight",
+            "scale": 1,
+            "add": 0.36000001
+          }
+        ]
+      },
+      {
+        "name": "xCollarBack",
+        "collision": "none",
+        "color": [
+          0.16,
+          0.18,
+          0.2
+        ],
+        "metalness": 0.5,
+        "roughness": 0.4,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.02,
+            0.15,
+            0.15
+          ]
+        },
+        "offset": [
+          -0.825,
+          1.81,
+          0
+        ],
+        "offsetParams": [
+          {
+            "axis": 1,
+            "param": "mountHeight",
+            "scale": 1,
+            "add": 0.36000001
+          }
+        ]
+      },
+      {
+        "name": "moveXLamp",
+        "collision": "none",
+        "shape": {
+          "kind": "cylinder",
+          "radius": 0.014,
+          "height": 0.016
+        },
+        "offset": [
+          -0.45,
+          1.964,
+          -0.1
+        ],
+        "offsetParams": [
+          {
+            "axis": 1,
+            "param": "mountHeight",
+            "scale": 1,
+            "add": 0.51400001
+          }
+        ],
+        "lamps": [
+          {
+            "name": "moveXLamp",
+            "emissive": [
+              0.95,
+              0.95,
+              0.95
+            ],
+            "offColor": [
+              0.22,
+              0.22,
+              0.22
+            ]
+          }
+        ]
+      },
+      {
+        "name": "movingXLamp",
+        "collision": "none",
+        "shape": {
+          "kind": "cylinder",
+          "radius": 0.014,
+          "height": 0.016
+        },
+        "offset": [
+          -0.45,
+          1.964,
+          0.1
+        ],
+        "offsetParams": [
+          {
+            "axis": 1,
+            "param": "mountHeight",
+            "scale": 1,
+            "add": 0.51400001
+          }
+        ],
+        "lamps": [
+          {
+            "name": "movingXLamp",
+            "emissive": [
+              0.98,
+              0.78,
+              0.08
+            ],
+            "offColor": [
+              0.24,
+              0.2,
+              0.06
+            ]
+          }
+        ]
+      },
+      {
+        "name": "xLabel",
+        "collision": "none",
+        "color": [
+          0.98,
+          0.88,
+          0.25
+        ],
+        "shape": {
+          "kind": "label",
+          "size": [
+            0.28,
+            0.055
+          ],
+          "textFrom": "xDisplay"
+        },
+        "offset": [
+          -0.378,
+          1.895,
+          0
+        ],
+        "offsetParams": [
+          {
+            "axis": 1,
+            "param": "mountHeight",
+            "scale": 1,
+            "add": 0.44500001
+          }
+        ],
+        "rotation": [
+          0,
+          1.57079633,
+          0
+        ]
+      },
+      {
+        "name": "xCarriage",
+        "shape": {
+          "kind": "frame"
+        },
+        "offset": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "name": "xBeam",
+        "parent": "xCarriage",
+        "collision": "none",
+        "color": [
+          0.7,
+          0.73,
+          0.76
+        ],
+        "metalness": 0.68,
+        "roughness": 0.3,
+        "shape": {
+          "kind": "box",
+          "size": [
+            1.92,
+            0.11,
+            0.11
+          ],
+          "sizeParams": [
+            {
+              "axis": 0,
+              "param": "strokeX",
+              "scale": 1,
+              "add": 0.72
+            }
+          ]
+        },
+        "offset": [
+          -1.045,
+          1.81,
+          0
+        ],
+        "offsetParams": [
+          {
+            "axis": 0,
+            "param": "strokeX",
+            "scale": -0.5,
+            "add": -0.44499999
+          },
+          {
+            "axis": 1,
+            "param": "mountHeight",
+            "scale": 1,
+            "add": 0.36000001
+          }
+        ]
+      },
+      {
+        "name": "xBeamSlotTop",
+        "parent": "xCarriage",
+        "collision": "none",
+        "color": [
+          0.16,
+          0.18,
+          0.2
+        ],
+        "metalness": 0.4,
+        "roughness": 0.6,
+        "shape": {
+          "kind": "box",
+          "size": [
+            1.92,
+            0.006,
+            0.032
+          ],
+          "sizeParams": [
+            {
+              "axis": 0,
+              "param": "strokeX",
+              "scale": 1,
+              "add": 0.72
+            }
+          ]
+        },
+        "offset": [
+          -1.045,
+          1.866,
+          0
+        ],
+        "offsetParams": [
+          {
+            "axis": 0,
+            "param": "strokeX",
+            "scale": -0.5,
+            "add": -0.44499999
+          },
+          {
+            "axis": 1,
+            "param": "mountHeight",
+            "scale": 1,
+            "add": 0.41600001
+          }
+        ]
+      },
+      {
+        "name": "xBeamSlotSideL",
+        "parent": "xCarriage",
+        "collision": "none",
+        "color": [
+          0.16,
+          0.18,
+          0.2
+        ],
+        "metalness": 0.4,
+        "roughness": 0.6,
+        "shape": {
+          "kind": "box",
+          "size": [
+            1.92,
+            0.032,
+            0.006
+          ],
+          "sizeParams": [
+            {
+              "axis": 0,
+              "param": "strokeX",
+              "scale": 1,
+              "add": 0.72
+            }
+          ]
+        },
+        "offset": [
+          -1.045,
+          1.81,
+          0.056
+        ],
+        "offsetParams": [
+          {
+            "axis": 0,
+            "param": "strokeX",
+            "scale": -0.5,
+            "add": -0.44499999
+          },
+          {
+            "axis": 1,
+            "param": "mountHeight",
+            "scale": 1,
+            "add": 0.36000001
+          }
+        ]
+      },
+      {
+        "name": "xBeamSlotSideR",
+        "parent": "xCarriage",
+        "collision": "none",
+        "color": [
+          0.16,
+          0.18,
+          0.2
+        ],
+        "metalness": 0.4,
+        "roughness": 0.6,
+        "shape": {
+          "kind": "box",
+          "size": [
+            1.92,
+            0.032,
+            0.006
+          ],
+          "sizeParams": [
+            {
+              "axis": 0,
+              "param": "strokeX",
+              "scale": 1,
+              "add": 0.72
+            }
+          ]
+        },
+        "offset": [
+          -1.045,
+          1.81,
+          -0.056
+        ],
+        "offsetParams": [
+          {
+            "axis": 0,
+            "param": "strokeX",
+            "scale": -0.5,
+            "add": -0.44499999
+          },
+          {
+            "axis": 1,
+            "param": "mountHeight",
+            "scale": 1,
+            "add": 0.36000001
+          }
+        ]
+      },
+      {
+        "name": "xBeamRearCap",
+        "parent": "xCarriage",
+        "collision": "none",
+        "color": [
+          0.18,
+          0.2,
+          0.22
+        ],
+        "metalness": 0.5,
+        "roughness": 0.45,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.02,
+            0.12,
+            0.12
+          ]
+        },
+        "offset": [
+          -2.015,
+          1.81,
+          0
+        ],
+        "offsetParams": [
+          {
+            "axis": 0,
+            "param": "strokeX",
+            "scale": -1,
+            "add": -0.815
+          },
+          {
+            "axis": 1,
+            "param": "mountHeight",
+            "scale": 1,
+            "add": 0.36000001
+          }
+        ]
+      },
+      {
+        "name": "zHousingBody",
+        "parent": "xCarriage",
+        "collision": "none",
+        "color": [
+          0.72,
+          0.12,
+          0.08
+        ],
+        "metalness": 0.22,
+        "roughness": 0.4,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.17,
+            0.42,
+            0.17
+          ]
+        },
+        "offset": [
+          0,
+          1.79,
+          0
+        ],
+        "offsetParams": [
+          {
+            "axis": 1,
+            "param": "mountHeight",
+            "scale": 1,
+            "add": 0.34000001
+          }
+        ]
+      },
+      {
+        "name": "zHousingCapTop",
+        "parent": "xCarriage",
+        "collision": "none",
+        "color": [
+          0.2,
+          0.22,
+          0.25
+        ],
+        "metalness": 0.55,
+        "roughness": 0.4,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.175,
+            0.024,
+            0.175
+          ]
+        },
+        "offset": [
+          0,
+          2.005,
+          0
+        ],
+        "offsetParams": [
+          {
+            "axis": 1,
+            "param": "mountHeight",
+            "scale": 1,
+            "add": 0.55500001
+          }
+        ]
+      },
+      {
+        "name": "zHousingCapBot",
+        "parent": "xCarriage",
+        "collision": "none",
+        "color": [
+          0.2,
+          0.22,
+          0.25
+        ],
+        "metalness": 0.55,
+        "roughness": 0.4,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.175,
+            0.024,
+            0.175
+          ]
+        },
+        "offset": [
+          0,
+          1.575,
+          0
+        ],
+        "offsetParams": [
+          {
+            "axis": 1,
+            "param": "mountHeight",
+            "scale": 1,
+            "add": 0.12500001
+          }
+        ]
+      },
+      {
+        "name": "moveZLamp",
+        "parent": "xCarriage",
+        "collision": "none",
+        "shape": {
+          "kind": "cylinder",
+          "radius": 0.012,
+          "height": 0.014
+        },
+        "offset": [
+          0.06,
+          2.022,
+          -0.05
+        ],
+        "offsetParams": [
+          {
+            "axis": 1,
+            "param": "mountHeight",
+            "scale": 1,
+            "add": 0.57200001
+          }
+        ],
+        "lamps": [
+          {
+            "name": "moveZLamp",
+            "emissive": [
+              0.95,
+              0.95,
+              0.95
+            ],
+            "offColor": [
+              0.22,
+              0.22,
+              0.22
+            ]
+          }
+        ]
+      },
+      {
+        "name": "movingZLamp",
+        "parent": "xCarriage",
+        "collision": "none",
+        "shape": {
+          "kind": "cylinder",
+          "radius": 0.012,
+          "height": 0.014
+        },
+        "offset": [
+          0.06,
+          2.022,
+          0.05
+        ],
+        "offsetParams": [
+          {
+            "axis": 1,
+            "param": "mountHeight",
+            "scale": 1,
+            "add": 0.57200001
+          }
+        ],
+        "lamps": [
+          {
+            "name": "movingZLamp",
+            "emissive": [
+              0.98,
+              0.78,
+              0.08
+            ],
+            "offColor": [
+              0.24,
+              0.2,
+              0.06
+            ]
+          }
+        ]
+      },
+      {
+        "name": "zLabel",
+        "parent": "xCarriage",
+        "collision": "none",
+        "color": [
+          0.98,
+          0.88,
+          0.25
+        ],
+        "shape": {
+          "kind": "label",
+          "size": [
+            0.22,
+            0.048
+          ],
+          "textFrom": "zDisplay"
+        },
+        "offset": [
+          0.088,
+          1.91,
+          0
+        ],
+        "offsetParams": [
+          {
+            "axis": 1,
+            "param": "mountHeight",
+            "scale": 1,
+            "add": 0.46000001
+          }
+        ],
+        "rotation": [
+          0,
+          1.57079633,
+          0
+        ]
+      },
+      {
+        "name": "zCarriage",
+        "parent": "xCarriage",
+        "shape": {
+          "kind": "frame"
+        },
+        "offset": [
+          0,
+          1.45,
+          0
+        ],
+        "offsetParams": [
+          {
+            "axis": 1,
+            "param": "mountHeight",
+            "scale": 1
+          }
+        ]
+      },
+      {
+        "name": "zRodL",
+        "parent": "zCarriage",
+        "collision": "none",
+        "color": [
+          0.84,
+          0.87,
+          0.9
+        ],
+        "metalness": 0.85,
+        "roughness": 0.16,
+        "shape": {
+          "kind": "cylinder",
+          "radius": 0.013,
+          "height": 1.17,
+          "sizeParams": [
+            {
+              "axis": 1,
+              "param": "strokeZ",
+              "add": 0.62
+            }
+          ]
+        },
+        "offset": [
+          0.02,
+          0.635,
+          0.046
+        ],
+        "offsetParams": [
+          {
+            "axis": 1,
+            "param": "strokeZ",
+            "scale": 0.5,
+            "add": 0.36000001
+          }
+        ]
+      },
+      {
+        "name": "zRodR",
+        "parent": "zCarriage",
+        "collision": "none",
+        "color": [
+          0.84,
+          0.87,
+          0.9
+        ],
+        "metalness": 0.85,
+        "roughness": 0.16,
+        "shape": {
+          "kind": "cylinder",
+          "radius": 0.013,
+          "height": 1.17,
+          "sizeParams": [
+            {
+              "axis": 1,
+              "param": "strokeZ",
+              "add": 0.62
+            }
+          ]
+        },
+        "offset": [
+          0.02,
+          0.635,
+          -0.046
+        ],
+        "offsetParams": [
+          {
+            "axis": 1,
+            "param": "strokeZ",
+            "scale": 0.5,
+            "add": 0.36000001
+          }
+        ]
+      },
+      {
+        "name": "zPistonRod",
+        "parent": "zCarriage",
+        "collision": "none",
+        "color": [
+          0.76,
+          0.79,
+          0.83
+        ],
+        "metalness": 0.78,
+        "roughness": 0.22,
+        "shape": {
+          "kind": "cylinder",
+          "radius": 0.016,
+          "height": 1.09,
+          "sizeParams": [
+            {
+              "axis": 1,
+              "param": "strokeZ",
+              "add": 0.54
+            }
+          ]
+        },
+        "offset": [
+          -0.032,
+          0.595,
+          0
+        ],
+        "offsetParams": [
+          {
+            "axis": 1,
+            "param": "strokeZ",
+            "scale": 0.5,
+            "add": 0.32000001
+          }
+        ]
+      },
+      {
+        "name": "zTopPlate",
+        "parent": "zCarriage",
+        "collision": "none",
+        "color": [
+          0.2,
+          0.22,
+          0.25
+        ],
+        "metalness": 0.55,
+        "roughness": 0.4,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.048,
+            0.024,
+            0.136
+          ]
+        },
+        "offset": [
+          0.02,
+          1.225,
+          0
+        ],
+        "offsetParams": [
+          {
+            "axis": 1,
+            "param": "strokeZ",
+            "scale": 1,
+            "add": 0.675
+          }
+        ]
+      },
+      {
+        "name": "zTopBoltL",
+        "parent": "zCarriage",
+        "collision": "none",
+        "finish": "bolt",
+        "shape": {
+          "kind": "cylinder",
+          "radius": 0.012,
+          "height": 0.012
+        },
+        "offset": [
+          0.02,
+          1.241,
+          0.046
+        ],
+        "offsetParams": [
+          {
+            "axis": 1,
+            "param": "strokeZ",
+            "scale": 1,
+            "add": 0.691
+          }
+        ]
+      },
+      {
+        "name": "zTopBoltR",
+        "parent": "zCarriage",
+        "collision": "none",
+        "finish": "bolt",
+        "shape": {
+          "kind": "cylinder",
+          "radius": 0.012,
+          "height": 0.012
+        },
+        "offset": [
+          0.02,
+          1.241,
+          -0.046
+        ],
+        "offsetParams": [
+          {
+            "axis": 1,
+            "param": "strokeZ",
+            "scale": 1,
+            "add": 0.691
+          }
+        ]
+      },
+      {
+        "name": "toolBlock",
+        "parent": "zCarriage",
+        "collision": "none",
+        "color": [
+          0.72,
+          0.75,
+          0.78
+        ],
+        "metalness": 0.65,
+        "roughness": 0.32,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.13,
+            0.048,
+            0.13
+          ]
+        },
+        "offset": [
+          0,
+          0.048,
+          0
+        ]
+      },
+      {
+        "name": "suctionNeck",
+        "parent": "zCarriage",
+        "collision": "none",
+        "finish": "bolt",
+        "shape": {
+          "kind": "cylinder",
+          "radius": 0.026,
+          "height": 0.018
+        },
+        "offset": [
+          0,
+          0.018,
+          0
+        ]
+      },
+      {
+        "name": "suctionCup",
+        "parent": "zCarriage",
+        "collision": "none",
+        "color": [
+          0.1,
+          0.11,
+          0.12
+        ],
+        "metalness": 0.08,
+        "roughness": 0.85,
+        "shape": {
+          "kind": "cylinder",
+          "radius": 0.052,
+          "height": 0.016
+        },
+        "offset": [
+          0,
+          0.008,
+          0
+        ]
+      },
+      {
+        "name": "grabLamp",
+        "parent": "zCarriage",
+        "collision": "none",
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.016,
+            0.024,
+            0.028
+          ]
+        },
+        "offset": [
+          0.066,
+          0.05,
+          -0.028
+        ],
+        "lamps": [
+          {
+            "name": "grabLamp",
+            "emissive": [
+              0.15,
+              0.9,
+              0.25
+            ],
+            "offColor": [
+              0.04,
+              0.15,
+              0.05
+            ],
+            "param": "manualGrab"
+          }
+        ]
+      },
+      {
+        "name": "detectedLamp",
+        "parent": "zCarriage",
+        "collision": "none",
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.016,
+            0.024,
+            0.028
+          ]
+        },
+        "offset": [
+          0.066,
+          0.05,
+          0.028
+        ],
+        "lamps": [
+          {
+            "name": "detectedLamp",
+            "emissive": [
+              0.98,
+              0.75,
+              0.08
+            ],
+            "offColor": [
+              0.18,
+              0.14,
+              0.04
+            ]
+          }
+        ]
+      },
+      {
+        "name": "sensorEye",
+        "parent": "zCarriage",
+        "shape": {
+          "kind": "frame"
+        },
+        "offset": [
+          0,
+          0.01,
+          0
+        ],
+        "beam": {
+          "range": 0.14,
+          "axis": [
+            0,
+            -1,
+            0
+          ]
+        }
+      },
+      {
+        "name": "gripper",
+        "parent": "zCarriage",
+        "shape": {
+          "kind": "frame"
+        },
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "grip": {
+          "zone": {
+            "size": [
+              0.26,
+              0.28,
+              0.26
+            ],
+            "offset": [
+              0,
+              -0.04,
+              0
+            ]
+          }
+        }
+      }
+    ],
+    "joints": [
+      {
+        "name": "x",
+        "link": "xCarriage",
+        "type": "prismatic",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "min": 0,
+        "max": 2.5,
+        "maxParam": {
+          "param": "strokeX",
+          "scale": 1,
+          "add": 0,
+          "min": 0.1
+        }
+      },
+      {
+        "name": "z",
+        "link": "zCarriage",
+        "type": "prismatic",
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "min": 0,
+        "max": 1.5,
+        "maxParam": {
+          "param": "strokeZ",
+          "scale": 1,
+          "add": 0,
+          "min": 0.05
+        }
+      }
+    ],
+    "bounds": {
+      "length": 2.12,
+      "width": 0.48,
+      "top": 2.75,
+      "bottom": 0,
+      "centerX": -0.96,
+      "centerZ": -0.05
+    },
+    "posable": true
+  },
+  "materials": [
+    {
+      "id": "housingRed",
+      "color": [
+        0.68,
+        0.11,
+        0.07
+      ],
+      "metalness": 0.22,
+      "roughness": 0.42
+    },
+    {
+      "id": "housingRedDark",
+      "color": [
+        0.48,
+        0.08,
+        0.05
+      ],
+      "metalness": 0.25,
+      "roughness": 0.48
+    },
+    {
+      "id": "aluProfile",
+      "color": [
+        0.68,
+        0.71,
+        0.74
+      ],
+      "metalness": 0.65,
+      "roughness": 0.32
+    },
+    {
+      "id": "aluSlot",
+      "color": [
+        0.16,
+        0.18,
+        0.2
+      ],
+      "metalness": 0.4,
+      "roughness": 0.6
+    },
+    {
+      "id": "chromeRod",
+      "color": [
+        0.84,
+        0.87,
+        0.9
+      ],
+      "metalness": 0.85,
+      "roughness": 0.16
+    },
+    {
+      "id": "darkSteel",
+      "color": [
+        0.17,
+        0.19,
+        0.22
+      ],
+      "metalness": 0.55,
+      "roughness": 0.45
+    },
+    {
+      "id": "rubberCup",
+      "color": [
+        0.08,
+        0.09,
+        0.1
+      ],
+      "metalness": 0.05,
+      "roughness": 0.85
+    },
+    {
+      "id": "badgeWhite",
+      "color": [
+        0.9,
+        0.9,
+        0.88
+      ],
+      "metalness": 0.05,
+      "roughness": 0.5
+    }
+  ]
+}

@@ -1,0 +1,657 @@
+{
+  "id": "user.filling-tank",
+  "name": "Filling Tank",
+  "category": "Equipment",
+  "geometry": {
+    "bounds": {
+      "bottom": -1.75,
+      "centerX": 0.095,
+      "length": 2.29,
+      "top": 2.8,
+      "width": 2.2
+    },
+    "joints": [
+      {
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "link": "waterRoot",
+        "max": 2,
+        "min": 0,
+        "name": "waterLevel",
+        "type": "prismatic"
+      }
+    ],
+    "kind": "rig",
+    "links": [
+      {
+        "finish": "frame",
+        "name": "col_fl",
+        "offset": [
+          -1,
+          1.35,
+          -1
+        ],
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.1,
+            2.7,
+            0.1
+          ]
+        }
+      },
+      {
+        "finish": "frame",
+        "name": "col_fr",
+        "offset": [
+          1,
+          1.35,
+          -1
+        ],
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.1,
+            2.7,
+            0.1
+          ]
+        }
+      },
+      {
+        "finish": "frame",
+        "name": "col_bl",
+        "offset": [
+          -1,
+          1.35,
+          1
+        ],
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.1,
+            2.7,
+            0.1
+          ]
+        }
+      },
+      {
+        "finish": "frame",
+        "name": "col_br",
+        "offset": [
+          1,
+          1.35,
+          1
+        ],
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.1,
+            2.7,
+            0.1
+          ]
+        }
+      },
+      {
+        "finish": "frame",
+        "name": "beam_b1",
+        "offset": [
+          0,
+          0.06,
+          -1
+        ],
+        "shape": {
+          "kind": "box",
+          "size": [
+            2.1,
+            0.12,
+            0.1
+          ]
+        }
+      },
+      {
+        "finish": "frame",
+        "name": "beam_b2",
+        "offset": [
+          0,
+          0.06,
+          1
+        ],
+        "shape": {
+          "kind": "box",
+          "size": [
+            2.1,
+            0.12,
+            0.1
+          ]
+        }
+      },
+      {
+        "finish": "frame",
+        "name": "beam_b3",
+        "offset": [
+          -1,
+          0.06,
+          0
+        ],
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.1,
+            0.12,
+            1.9
+          ]
+        }
+      },
+      {
+        "finish": "frame",
+        "name": "beam_b4",
+        "offset": [
+          1,
+          0.06,
+          0
+        ],
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.1,
+            0.12,
+            1.9
+          ]
+        }
+      },
+      {
+        "finish": "frame",
+        "name": "beam_t1",
+        "offset": [
+          0,
+          2.65,
+          -1
+        ],
+        "shape": {
+          "kind": "box",
+          "size": [
+            2.1,
+            0.12,
+            0.1
+          ]
+        }
+      },
+      {
+        "finish": "frame",
+        "name": "beam_t2",
+        "offset": [
+          0,
+          2.65,
+          1
+        ],
+        "shape": {
+          "kind": "box",
+          "size": [
+            2.1,
+            0.12,
+            0.1
+          ]
+        }
+      },
+      {
+        "finish": "frame",
+        "name": "beam_t3",
+        "offset": [
+          -1,
+          2.65,
+          0
+        ],
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.1,
+            0.12,
+            1.9
+          ]
+        }
+      },
+      {
+        "finish": "frame",
+        "name": "beam_t4",
+        "offset": [
+          1,
+          2.65,
+          0
+        ],
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.1,
+            0.12,
+            1.9
+          ]
+        }
+      },
+      {
+        "color": [
+          0.18,
+          0.2,
+          0.22
+        ],
+        "metalness": 0.8,
+        "name": "tank_base",
+        "offset": [
+          0,
+          0.125,
+          0
+        ],
+        "roughness": 0.3,
+        "shape": {
+          "height": 0.25,
+          "kind": "cylinder",
+          "radius": 0.82
+        }
+      },
+      {
+        "color": [
+          0.18,
+          0.2,
+          0.22
+        ],
+        "metalness": 0.8,
+        "name": "tank_top",
+        "offset": [
+          0,
+          2.31,
+          0
+        ],
+        "roughness": 0.3,
+        "shape": {
+          "height": 0.12,
+          "kind": "cylinder",
+          "radius": 0.82
+        }
+      },
+      {
+        "collision": "none",
+        "color": [
+          0.7,
+          0.85,
+          0.95
+        ],
+        "name": "tank_glass",
+        "offset": [
+          0,
+          1.25,
+          0
+        ],
+        "opacity": 0.25,
+        "shape": {
+          "height": 2,
+          "kind": "cylinder",
+          "radius": 0.8
+        }
+      },
+      {
+        "name": "waterRoot",
+        "offset": [
+          0,
+          0.25,
+          0
+        ],
+        "shape": {
+          "kind": "frame"
+        }
+      },
+      {
+        "collision": "none",
+        "color": [
+          0.08,
+          0.42,
+          0.82
+        ],
+        "name": "waterBody",
+        "offset": [
+          0,
+          -1,
+          0
+        ],
+        "opacity": 0.65,
+        "parent": "waterRoot",
+        "shape": {
+          "height": 2,
+          "kind": "cylinder",
+          "radius": 0.79
+        }
+      },
+      {
+        "collision": "none",
+        "color": [
+          0.2,
+          0.6,
+          0.95
+        ],
+        "name": "waterSurface",
+        "offset": [
+          0,
+          -0.02,
+          0
+        ],
+        "opacity": 0.85,
+        "parent": "waterRoot",
+        "shape": {
+          "height": 0.04,
+          "kind": "cylinder",
+          "radius": 0.795
+        }
+      },
+      {
+        "collision": "none",
+        "color": [
+          0.9,
+          0.2,
+          0.1
+        ],
+        "metalness": 0.2,
+        "name": "sightFloat",
+        "offset": [
+          0.86,
+          0,
+          0
+        ],
+        "parent": "waterRoot",
+        "roughness": 0.4,
+        "shape": {
+          "height": 0.05,
+          "kind": "cylinder",
+          "radius": 0.025
+        }
+      },
+      {
+        "collision": "none",
+        "color": [
+          0.9,
+          0.95,
+          1
+        ],
+        "name": "sightTube",
+        "offset": [
+          0.86,
+          1.25,
+          0
+        ],
+        "opacity": 0.3,
+        "shape": {
+          "height": 2.02,
+          "kind": "cylinder",
+          "radius": 0.018
+        }
+      },
+      {
+        "collision": "none",
+        "color": [
+          0.9,
+          0.9,
+          0.85
+        ],
+        "name": "sightRuler",
+        "offset": [
+          0.9,
+          1.25,
+          0
+        ],
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.03,
+            2.02,
+            0.08
+          ]
+        }
+      },
+      {
+        "finish": "bolt",
+        "name": "inlet_pipe_v",
+        "offset": [
+          0,
+          2.52,
+          0
+        ],
+        "shape": {
+          "height": 0.4,
+          "kind": "cylinder",
+          "radius": 0.04
+        }
+      },
+      {
+        "finish": "bolt",
+        "name": "inlet_pipe_h",
+        "offset": [
+          0.35,
+          2.65,
+          0
+        ],
+        "quat": [
+          0,
+          0,
+          0.7071068,
+          0.7071068
+        ],
+        "shape": {
+          "height": 0.7,
+          "kind": "cylinder",
+          "radius": 0.04
+        }
+      },
+      {
+        "lamps": [
+          {
+            "emissive": [
+              0.1,
+              0.8,
+              0.2
+            ],
+            "name": "fillLamp",
+            "offColor": [
+              0.2,
+              0.2,
+              0.2
+            ]
+          }
+        ],
+        "name": "inlet_valve",
+        "offset": [
+          0.35,
+          2.65,
+          0
+        ],
+        "quat": [
+          0,
+          0,
+          0.7071068,
+          0.7071068
+        ],
+        "shape": {
+          "height": 0.12,
+          "kind": "cylinder",
+          "radius": 0.07
+        }
+      },
+      {
+        "finish": "bolt",
+        "name": "drain_pipe",
+        "offset": [
+          -0.7,
+          0.125,
+          0
+        ],
+        "quat": [
+          0,
+          0,
+          0.7071068,
+          0.7071068
+        ],
+        "shape": {
+          "height": 0.6,
+          "kind": "cylinder",
+          "radius": 0.05
+        }
+      },
+      {
+        "lamps": [
+          {
+            "emissive": [
+              0.9,
+              0.5,
+              0.05
+            ],
+            "name": "drainLamp",
+            "offColor": [
+              0.2,
+              0.2,
+              0.2
+            ]
+          }
+        ],
+        "name": "drain_valve",
+        "offset": [
+          -0.7,
+          0.125,
+          0
+        ],
+        "quat": [
+          0,
+          0,
+          0.7071068,
+          0.7071068
+        ],
+        "shape": {
+          "height": 0.12,
+          "kind": "cylinder",
+          "radius": 0.08
+        }
+      },
+      {
+        "lamps": [
+          {
+            "emissive": [
+              0.1,
+              0.9,
+              0.1
+            ],
+            "name": "lowLamp",
+            "offColor": [
+              0.05,
+              0.2,
+              0.05
+            ]
+          }
+        ],
+        "name": "sensor_low",
+        "offset": [
+          0.93,
+          0.35,
+          0.06
+        ],
+        "shape": {
+          "height": 0.03,
+          "kind": "cylinder",
+          "radius": 0.02
+        }
+      },
+      {
+        "lamps": [
+          {
+            "emissive": [
+              0.95,
+              0.1,
+              0.1
+            ],
+            "name": "highLamp",
+            "offColor": [
+              0.2,
+              0.05,
+              0.05
+            ]
+          }
+        ],
+        "name": "sensor_high",
+        "offset": [
+          0.93,
+          2.15,
+          0.06
+        ],
+        "shape": {
+          "height": 0.03,
+          "kind": "cylinder",
+          "radius": 0.02
+        }
+      },
+      {
+        "finish": "frame",
+        "name": "panel_post",
+        "offset": [
+          1.15,
+          0.5,
+          -0.6
+        ],
+        "shape": {
+          "height": 1,
+          "kind": "cylinder",
+          "radius": 0.03
+        }
+      },
+      {
+        "color": [
+          0.85,
+          0.85,
+          0.82
+        ],
+        "name": "panel_box",
+        "offset": [
+          1.15,
+          1.15,
+          -0.6
+        ],
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.18,
+            0.32,
+            0.28
+          ]
+        }
+      },
+      {
+        "color": [
+          0,
+          0.9,
+          0.2
+        ],
+        "name": "panel_display",
+        "offset": [
+          1.242,
+          1.22,
+          -0.6
+        ],
+        "quat": [
+          0,
+          0.7071068,
+          0,
+          0.7071068
+        ],
+        "shape": {
+          "kind": "label",
+          "size": [
+            0.22,
+            0.06
+          ],
+          "textFrom": "levelDisplay"
+        }
+      }
+    ]
+  },
+  "commsParam": "enableComms",
+  "sdk": {
+    "level": 4,
+    "of": "v2:8083:vclic530q6"
+  }
+}
