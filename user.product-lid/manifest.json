@@ -1,0 +1,227 @@
+{
+  "id": "user.product-lid",
+  "name": "Product Lid",
+  "category": "Products",
+  "cargo": {
+    "friction": 0.65,
+    "separateContacts": true,
+    "heavy": true,
+    "massParam": "mass",
+    "colorParam": "color"
+  },
+  "geometry": {
+    "kind": "rig",
+    "bounds": {
+      "length": 0.4,
+      "width": 0.4,
+      "top": 0.04,
+      "bottom": -0.04
+    },
+    "links": [
+      {
+        "name": "bottomPlug",
+        "colorParam": "color",
+        "metalness": 0.08,
+        "roughness": 0.48,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.25,
+            0.034,
+            0.25
+          ]
+        },
+        "offset": [
+          0,
+          -0.023,
+          0
+        ]
+      },
+      {
+        "name": "topFlange",
+        "colorParam": "color",
+        "metalness": 0.08,
+        "roughness": 0.42,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.4,
+            0.046,
+            0.4
+          ]
+        },
+        "offset": [
+          0,
+          0.017,
+          0
+        ]
+      },
+      {
+        "name": "topGroove",
+        "collision": "none",
+        "color": [
+          0.22,
+          0.38,
+          0.08
+        ],
+        "metalness": 0.12,
+        "roughness": 0.65,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.25,
+            0.004,
+            0.25
+          ]
+        },
+        "offset": [
+          0,
+          0.039,
+          0
+        ]
+      },
+      {
+        "name": "topCenterIsland",
+        "collision": "none",
+        "colorParam": "color",
+        "metalness": 0.08,
+        "roughness": 0.38,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.16,
+            0.006,
+            0.16
+          ]
+        },
+        "offset": [
+          0,
+          0.041,
+          0
+        ]
+      },
+      {
+        "name": "suctionTargetBadge",
+        "collision": "none",
+        "color": [
+          0.82,
+          0.85,
+          0.8
+        ],
+        "metalness": 0.15,
+        "roughness": 0.5,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.055,
+            0.007,
+            0.035
+          ]
+        },
+        "offset": [
+          0,
+          0.0415,
+          0
+        ]
+      },
+      {
+        "name": "lidSlotPosX",
+        "collision": "none",
+        "color": [
+          0.18,
+          0.32,
+          0.06
+        ],
+        "metalness": 0.15,
+        "roughness": 0.7,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.006,
+            0.018,
+            0.08
+          ]
+        },
+        "offset": [
+          0.199,
+          0.017,
+          0
+        ]
+      },
+      {
+        "name": "lidSlotNegX",
+        "collision": "none",
+        "color": [
+          0.18,
+          0.32,
+          0.06
+        ],
+        "metalness": 0.15,
+        "roughness": 0.7,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.006,
+            0.018,
+            0.08
+          ]
+        },
+        "offset": [
+          -0.199,
+          0.017,
+          0
+        ]
+      },
+      {
+        "name": "lidSlotPosZ",
+        "collision": "none",
+        "color": [
+          0.18,
+          0.32,
+          0.06
+        ],
+        "metalness": 0.15,
+        "roughness": 0.7,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.08,
+            0.018,
+            0.006
+          ]
+        },
+        "offset": [
+          0,
+          0.017,
+          0.199
+        ]
+      },
+      {
+        "name": "lidSlotNegZ",
+        "collision": "none",
+        "color": [
+          0.18,
+          0.32,
+          0.06
+        ],
+        "metalness": 0.15,
+        "roughness": 0.7,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.08,
+            0.018,
+            0.006
+          ]
+        },
+        "offset": [
+          0,
+          0.017,
+          -0.199
+        ]
+      }
+    ],
+    "joints": []
+  },
+  "materials": []
+}

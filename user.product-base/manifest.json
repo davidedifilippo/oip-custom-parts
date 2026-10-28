@@ -1,0 +1,336 @@
+{
+  "id": "user.product-base",
+  "name": "Product Base",
+  "category": "Products",
+  "cargo": {
+    "friction": 0.65,
+    "separateContacts": true,
+    "heavy": true,
+    "massParam": "mass",
+    "colorParam": "color"
+  },
+  "geometry": {
+    "kind": "rig",
+    "bounds": {
+      "length": 0.4,
+      "width": 0.4,
+      "top": 0.04,
+      "bottom": -0.04
+    },
+    "links": [
+      {
+        "name": "basePlate",
+        "colorParam": "color",
+        "metalness": 0.08,
+        "roughness": 0.45,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.4,
+            0.044,
+            0.4
+          ]
+        },
+        "offset": [
+          0,
+          -0.018,
+          0
+        ]
+      },
+      {
+        "name": "lugFL_x",
+        "colorParam": "color",
+        "metalness": 0.08,
+        "roughness": 0.42,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.14,
+            0.036,
+            0.055
+          ]
+        },
+        "offset": [
+          0.13,
+          0.022,
+          0.1725
+        ]
+      },
+      {
+        "name": "lugFL_z",
+        "colorParam": "color",
+        "metalness": 0.08,
+        "roughness": 0.42,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.055,
+            0.036,
+            0.085
+          ]
+        },
+        "offset": [
+          0.1725,
+          0.022,
+          0.1025
+        ]
+      },
+      {
+        "name": "lugFR_x",
+        "colorParam": "color",
+        "metalness": 0.08,
+        "roughness": 0.42,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.14,
+            0.036,
+            0.055
+          ]
+        },
+        "offset": [
+          0.13,
+          0.022,
+          -0.1725
+        ]
+      },
+      {
+        "name": "lugFR_z",
+        "colorParam": "color",
+        "metalness": 0.08,
+        "roughness": 0.42,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.055,
+            0.036,
+            0.085
+          ]
+        },
+        "offset": [
+          0.1725,
+          0.022,
+          -0.1025
+        ]
+      },
+      {
+        "name": "lugBL_x",
+        "colorParam": "color",
+        "metalness": 0.08,
+        "roughness": 0.42,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.14,
+            0.036,
+            0.055
+          ]
+        },
+        "offset": [
+          -0.13,
+          0.022,
+          0.1725
+        ]
+      },
+      {
+        "name": "lugBL_z",
+        "colorParam": "color",
+        "metalness": 0.08,
+        "roughness": 0.42,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.055,
+            0.036,
+            0.085
+          ]
+        },
+        "offset": [
+          -0.1725,
+          0.022,
+          0.1025
+        ]
+      },
+      {
+        "name": "lugBR_x",
+        "colorParam": "color",
+        "metalness": 0.08,
+        "roughness": 0.42,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.14,
+            0.036,
+            0.055
+          ]
+        },
+        "offset": [
+          -0.13,
+          0.022,
+          -0.1725
+        ]
+      },
+      {
+        "name": "lugBR_z",
+        "colorParam": "color",
+        "metalness": 0.08,
+        "roughness": 0.42,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.055,
+            0.036,
+            0.085
+          ]
+        },
+        "offset": [
+          -0.1725,
+          0.022,
+          -0.1025
+        ]
+      },
+      {
+        "name": "pocketRecess",
+        "collision": "none",
+        "color": [
+          0.06,
+          0.25,
+          0.38
+        ],
+        "metalness": 0.15,
+        "roughness": 0.65,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.22,
+            0.004,
+            0.22
+          ]
+        },
+        "offset": [
+          0,
+          0.005,
+          0
+        ]
+      },
+      {
+        "name": "centerBoss",
+        "collision": "none",
+        "colorParam": "color",
+        "metalness": 0.1,
+        "roughness": 0.4,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.12,
+            0.006,
+            0.12
+          ]
+        },
+        "offset": [
+          0,
+          0.006,
+          0
+        ]
+      },
+      {
+        "name": "slotPosX",
+        "collision": "none",
+        "color": [
+          0.08,
+          0.16,
+          0.24
+        ],
+        "metalness": 0.2,
+        "roughness": 0.7,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.006,
+            0.022,
+            0.09
+          ]
+        },
+        "offset": [
+          0.199,
+          -0.016,
+          0
+        ]
+      },
+      {
+        "name": "slotNegX",
+        "collision": "none",
+        "color": [
+          0.08,
+          0.16,
+          0.24
+        ],
+        "metalness": 0.2,
+        "roughness": 0.7,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.006,
+            0.022,
+            0.09
+          ]
+        },
+        "offset": [
+          -0.199,
+          -0.016,
+          0
+        ]
+      },
+      {
+        "name": "slotPosZ",
+        "collision": "none",
+        "color": [
+          0.08,
+          0.16,
+          0.24
+        ],
+        "metalness": 0.2,
+        "roughness": 0.7,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.09,
+            0.022,
+            0.006
+          ]
+        },
+        "offset": [
+          0,
+          -0.016,
+          0.199
+        ]
+      },
+      {
+        "name": "slotNegZ",
+        "collision": "none",
+        "color": [
+          0.08,
+          0.16,
+          0.24
+        ],
+        "metalness": 0.2,
+        "roughness": 0.7,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.09,
+            0.022,
+            0.006
+          ]
+        },
+        "offset": [
+          0,
+          -0.016,
+          -0.199
+        ]
+      }
+    ],
+    "joints": []
+  },
+  "materials": []
+}

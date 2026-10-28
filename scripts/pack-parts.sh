@@ -18,6 +18,8 @@ for part_dir in "$REPO_ROOT"/user.*; do
   if [ -d "$OIP_WEB_DIR" ]; then
     if [ -f "$part_dir/part.js" ]; then
       (cd "$OIP_WEB_DIR" && npm run --silent build-parts -- "$part_dir")
+      [ -f "$part_dir/rig.json" ] && cp "$part_dir/rig.json" "$part_dir/manifest.json"
+      [ -f "$part_dir/behavior.ts" ] && cp "$part_dir/behavior.ts" "$part_dir/behavior.js"
     fi
     (cd "$OIP_WEB_DIR" && npm run --silent check-part -- "$part_dir")
   fi
