@@ -14,6 +14,7 @@ Questo repository è strutturato per funzionare in **doppio formato**:
 | :--- | :--- | :---: | :--- | :--- | :--- |
 | **`user.filling-tank`** | **Filling Tank** | `Equipment` | [`user.filling-tank/`](./user.filling-tank) | [`dist/user.filling-tank.oippart`](./dist/user.filling-tank.oippart) | Serbatoio industriale graduato con valvole di carico/scarico (`Fill`/`Drain`), sensori di livello min/max (`5%`/`95%`), misura analogica `0–100%` e display digitale. |
 | **`user.two-axis-pick-and-place`** | **Two-Axis Pick & Place** | `Equipment` | [`user.two-axis-pick-and-place/`](./user.two-axis-pick-and-place) | [`dist/user.two-axis-pick-and-place.oippart`](./dist/user.two-axis-pick-and-place.oippart) | Manipolatore cartesiano Pick & Place a 2 assi (`X` orizzontale, `Z` verticale a doppio stelo di guida) con ventosa a vuoto, sensore presenza pezzo (`Detected`) e 3 modalità PLC (`digital`, `analog`, `bistable`). |
+| **`user.euro-crate`** | **Euro Crate (KLT)** | `Products` | [`user.euro-crate/`](./user.euro-crate) | [`dist/user.euro-crate.oippart`](./dist/user.euro-crate.oippart) | Cassetta industriale Euro KLT (`600×400×280 mm`) impilabile con cavità fisica cava per accogliere oggetti 3D al suo interno o contenere liquidi (`liquidFill` `5–95%`). |
 
 ---
 

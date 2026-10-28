@@ -1,0 +1,410 @@
+{
+  "id": "user.euro-crate",
+  "name": "Euro Crate (KLT)",
+  "category": "Products",
+  "cargo": {
+    "friction": 0.45,
+    "separateContacts": true,
+    "heavy": true,
+    "nestDepth": 0.015,
+    "massParam": "mass",
+    "colorParam": "color"
+  },
+  "geometry": {
+    "kind": "rig",
+    "links": [
+      {
+        "name": "foot",
+        "colorParam": "color",
+        "metalness": 0.05,
+        "roughness": 0.65,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.552,
+            0.015,
+            0.352
+          ]
+        },
+        "offset": [
+          0,
+          -0.1325,
+          0
+        ]
+      },
+      {
+        "name": "floor",
+        "colorParam": "color",
+        "metalness": 0.05,
+        "roughness": 0.65,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.579,
+            0.008,
+            0.379
+          ]
+        },
+        "offset": [
+          0,
+          -0.121,
+          0
+        ]
+      },
+      {
+        "name": "wallFront",
+        "colorParam": "color",
+        "metalness": 0.05,
+        "roughness": 0.6,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.6,
+            0.265,
+            0.021
+          ]
+        },
+        "offset": [
+          0,
+          0.0075,
+          0.1895
+        ]
+      },
+      {
+        "name": "wallBack",
+        "colorParam": "color",
+        "metalness": 0.05,
+        "roughness": 0.6,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.6,
+            0.265,
+            0.021
+          ]
+        },
+        "offset": [
+          0,
+          0.0075,
+          -0.1895
+        ]
+      },
+      {
+        "name": "wallLeft",
+        "colorParam": "color",
+        "metalness": 0.05,
+        "roughness": 0.6,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.021,
+            0.265,
+            0.358
+          ]
+        },
+        "offset": [
+          0.2895,
+          0.0075,
+          0
+        ]
+      },
+      {
+        "name": "wallRight",
+        "colorParam": "color",
+        "metalness": 0.05,
+        "roughness": 0.6,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.021,
+            0.265,
+            0.358
+          ]
+        },
+        "offset": [
+          -0.2895,
+          0.0075,
+          0
+        ]
+      },
+      {
+        "name": "rimFront",
+        "collision": "none",
+        "colorParam": "color",
+        "metalness": 0.05,
+        "roughness": 0.5,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.6,
+            0.022,
+            0.026
+          ]
+        },
+        "offset": [
+          0,
+          0.129,
+          0.187
+        ]
+      },
+      {
+        "name": "rimBack",
+        "collision": "none",
+        "colorParam": "color",
+        "metalness": 0.05,
+        "roughness": 0.5,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.6,
+            0.022,
+            0.026
+          ]
+        },
+        "offset": [
+          0,
+          0.129,
+          -0.187
+        ]
+      },
+      {
+        "name": "rimLeft",
+        "collision": "none",
+        "colorParam": "color",
+        "metalness": 0.05,
+        "roughness": 0.5,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.026,
+            0.022,
+            0.4
+          ]
+        },
+        "offset": [
+          0.287,
+          0.129,
+          0
+        ]
+      },
+      {
+        "name": "rimRight",
+        "collision": "none",
+        "colorParam": "color",
+        "metalness": 0.05,
+        "roughness": 0.5,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.026,
+            0.022,
+            0.4
+          ]
+        },
+        "offset": [
+          -0.287,
+          0.129,
+          0
+        ]
+      },
+      {
+        "name": "handleSlotPosX",
+        "collision": "none",
+        "color": [
+          0.16,
+          0.17,
+          0.18
+        ],
+        "metalness": 0.1,
+        "roughness": 0.8,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.006,
+            0.034,
+            0.11
+          ]
+        },
+        "offset": [
+          0.301,
+          0.088,
+          0
+        ]
+      },
+      {
+        "name": "handleSlotNegX",
+        "collision": "none",
+        "color": [
+          0.16,
+          0.17,
+          0.18
+        ],
+        "metalness": 0.1,
+        "roughness": 0.8,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.006,
+            0.034,
+            0.11
+          ]
+        },
+        "offset": [
+          -0.301,
+          0.088,
+          0
+        ]
+      },
+      {
+        "name": "ribFL",
+        "collision": "none",
+        "colorParam": "color",
+        "metalness": 0.08,
+        "roughness": 0.55,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.028,
+            0.265,
+            0.028
+          ]
+        },
+        "offset": [
+          0.286,
+          0.0075,
+          0.186
+        ]
+      },
+      {
+        "name": "ribFR",
+        "collision": "none",
+        "colorParam": "color",
+        "metalness": 0.08,
+        "roughness": 0.55,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.028,
+            0.265,
+            0.028
+          ]
+        },
+        "offset": [
+          0.286,
+          0.0075,
+          -0.186
+        ]
+      },
+      {
+        "name": "ribBL",
+        "collision": "none",
+        "colorParam": "color",
+        "metalness": 0.08,
+        "roughness": 0.55,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.028,
+            0.265,
+            0.028
+          ]
+        },
+        "offset": [
+          -0.286,
+          0.0075,
+          0.186
+        ]
+      },
+      {
+        "name": "ribBR",
+        "collision": "none",
+        "colorParam": "color",
+        "metalness": 0.08,
+        "roughness": 0.55,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.028,
+            0.265,
+            0.028
+          ]
+        },
+        "offset": [
+          -0.286,
+          0.0075,
+          -0.186
+        ]
+      },
+      {
+        "name": "kltLabel",
+        "collision": "none",
+        "color": [
+          0.22,
+          0.23,
+          0.24
+        ],
+        "metalness": 0.05,
+        "roughness": 0.75,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.004,
+            0.036,
+            0.085
+          ]
+        },
+        "offset": [
+          -0.301,
+          -0.08,
+          -0.09
+        ]
+      },
+      {
+        "name": "liquidBody",
+        "showParam": "hasLiquid",
+        "color": [
+          0.08,
+          0.48,
+          0.86
+        ],
+        "opacity": 0.72,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.554,
+            0.15535,
+            0.354
+          ],
+          "sizeParams": [
+            {
+              "axis": 1,
+              "param": "liquidFill",
+              "scale": 0.239
+            }
+          ]
+        },
+        "offset": [
+          0,
+          -0.039325,
+          0
+        ],
+        "offsetParams": [
+          {
+            "axis": 1,
+            "param": "liquidFill",
+            "scale": 0.1195,
+            "add": -0.11700001
+          }
+        ]
+      }
+    ],
+    "joints": [],
+    "bounds": {
+      "length": 0.6,
+      "width": 0.4,
+      "top": 0.14,
+      "bottom": -0.14
+    }
+  },
+  "materials": []
+}
