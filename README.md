@@ -44,3 +44,16 @@ Questo repository è strutturato per funzionare in **doppio formato**:
    git commit -m "Add user.<nome-componente>"
    git push
    ```
+
+---
+
+## ⚖️ Licenza e Disclaimer
+
+### Licenza
+Questo progetto è rilasciato sotto **[Licenza MIT](./LICENSE)** — Copyright (c) 2026 Ing. Davide Di Filippo.
+
+### Disclaimer (Avvertenza per l'Automazione Industriale)
+1. **Finalità didattica e di simulazione**: Tutti i componenti 3D, i modelli comportamentali e gli esempi di codice PLC (IEC 61131-3 Structured Text / Ladder) presenti in questo repository sono realizzati **esclusivamente per scopi didattici, formativi e di simulazione virtuale** all'interno di *Open Industry Project (OIP)*.
+2. **Esclusione di impiego su macchinari reali**: Il codice e le logiche di controllo qui riportate **non sono certificati per l'impiego su impianti industriali reali o sistemi safety-critical**. L'eventuale messa in servizio di macchinari fisici richiede sempre un'analisi dei rischi dedicata, circuiti di sicurezza certificati (es. EN ISO 13849 / IEC 62061) e validazione in campo da parte di personale abilitato.
+3. **Indipendenza e marchi**: Questo repository è un progetto indipendente sviluppato con geometrie procedurali e logiche originali. Eventuali riferimenti a standard o architetture di automazione hanno finalità puramente descrittiva e didattica.
+
