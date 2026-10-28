@@ -1,0 +1,1047 @@
+{
+  "id": "user.stacker-crane",
+  "name": "Stacker Crane (AS/RS)",
+  "category": "Equipment",
+  "commsParam": "enableComms",
+  "geometry": {
+    "kind": "rig",
+    "bounds": {
+      "length": 21.8,
+      "width": 4.5,
+      "top": 13,
+      "bottom": 0,
+      "centerX": 9.9
+    },
+    "joints": [
+      {
+        "name": "travel",
+        "link": "xCarriage",
+        "type": "prismatic",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "min": 0,
+        "max": 20
+      },
+      {
+        "name": "lift",
+        "link": "yCarriage",
+        "type": "prismatic",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "min": 0,
+        "max": 12.5
+      },
+      {
+        "name": "forks",
+        "link": "zForks",
+        "type": "prismatic",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "min": -2.2,
+        "max": 2.2
+      }
+    ],
+    "links": [
+      {
+        "name": "floorRailBeam",
+        "collision": "none",
+        "color": [
+          0.16,
+          0.18,
+          0.2
+        ],
+        "metalness": 0.6,
+        "roughness": 0.4,
+        "shape": {
+          "kind": "box",
+          "size": [
+            8.1,
+            0.06,
+            0.16
+          ],
+          "sizeParams": [
+            {
+              "axis": 0,
+              "param": "railLength",
+              "scale": 1,
+              "add": 1.6
+            }
+          ]
+        },
+        "offset": [
+          3.25,
+          0.03,
+          0
+        ],
+        "offsetParams": [
+          {
+            "axis": 0,
+            "param": "railLength",
+            "scale": 0.5
+          }
+        ]
+      },
+      {
+        "name": "floorRailTop",
+        "collision": "none",
+        "color": [
+          0.72,
+          0.75,
+          0.78
+        ],
+        "metalness": 0.8,
+        "roughness": 0.22,
+        "shape": {
+          "kind": "box",
+          "size": [
+            8.1,
+            0.025,
+            0.07
+          ],
+          "sizeParams": [
+            {
+              "axis": 0,
+              "param": "railLength",
+              "scale": 1,
+              "add": 1.6
+            }
+          ]
+        },
+        "offset": [
+          3.25,
+          0.0725,
+          0
+        ],
+        "offsetParams": [
+          {
+            "axis": 0,
+            "param": "railLength",
+            "scale": 0.5
+          }
+        ]
+      },
+      {
+        "name": "bufferStart",
+        "collision": "none",
+        "color": [
+          0.95,
+          0.68,
+          0.05
+        ],
+        "metalness": 0.2,
+        "roughness": 0.5,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.12,
+            0.16,
+            0.24
+          ]
+        },
+        "offset": [
+          -0.74,
+          0.1,
+          0
+        ]
+      },
+      {
+        "name": "bufferEnd",
+        "collision": "none",
+        "color": [
+          0.95,
+          0.68,
+          0.05
+        ],
+        "metalness": 0.2,
+        "roughness": 0.5,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.12,
+            0.16,
+            0.24
+          ]
+        },
+        "offset": [
+          7.24,
+          0.1,
+          0
+        ],
+        "offsetParams": [
+          {
+            "axis": 0,
+            "param": "railLength",
+            "scale": 1,
+            "add": 0.74
+          }
+        ]
+      },
+      {
+        "name": "portalColStart",
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.18,
+            5.85,
+            0.18
+          ],
+          "sizeParams": [
+            {
+              "axis": 1,
+              "param": "mastHeight",
+              "scale": 1,
+              "add": 1.35
+            }
+          ]
+        },
+        "offset": [
+          -0.85,
+          2.925,
+          0
+        ],
+        "offsetParams": [
+          {
+            "axis": 1,
+            "param": "mastHeight",
+            "scale": 0.5,
+            "add": 0.67499999
+          }
+        ],
+        "color": [
+          0.14,
+          0.16,
+          0.18
+        ],
+        "metalness": 0.55,
+        "roughness": 0.48
+      },
+      {
+        "name": "portalColEnd",
+        "collision": "none",
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.18,
+            5.85,
+            0.18
+          ],
+          "sizeParams": [
+            {
+              "axis": 1,
+              "param": "mastHeight",
+              "scale": 1,
+              "add": 1.35
+            }
+          ]
+        },
+        "offset": [
+          7.35,
+          2.925,
+          0
+        ],
+        "offsetParams": [
+          {
+            "axis": 0,
+            "param": "railLength",
+            "scale": 1,
+            "add": 0.85
+          },
+          {
+            "axis": 1,
+            "param": "mastHeight",
+            "scale": 0.5,
+            "add": 0.67499999
+          }
+        ],
+        "color": [
+          0.14,
+          0.16,
+          0.18
+        ],
+        "metalness": 0.55,
+        "roughness": 0.48
+      },
+      {
+        "name": "overheadGuideRail",
+        "collision": "none",
+        "shape": {
+          "kind": "box",
+          "size": [
+            8.4,
+            0.16,
+            0.22
+          ],
+          "sizeParams": [
+            {
+              "axis": 0,
+              "param": "railLength",
+              "scale": 1,
+              "add": 1.9
+            }
+          ]
+        },
+        "offset": [
+          3.25,
+          5.77,
+          0
+        ],
+        "offsetParams": [
+          {
+            "axis": 0,
+            "param": "railLength",
+            "scale": 0.5
+          },
+          {
+            "axis": 1,
+            "param": "mastHeight",
+            "scale": 1,
+            "add": 1.27
+          }
+        ],
+        "color": [
+          0.14,
+          0.16,
+          0.18
+        ],
+        "metalness": 0.55,
+        "roughness": 0.48
+      },
+      {
+        "name": "xCarriage",
+        "shape": {
+          "kind": "frame"
+        },
+        "offset": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "name": "bogieChassis",
+        "parent": "xCarriage",
+        "collision": "none",
+        "color": [
+          0.95,
+          0.68,
+          0.05
+        ],
+        "metalness": 0.2,
+        "roughness": 0.45,
+        "shape": {
+          "kind": "box",
+          "size": [
+            1.36,
+            0.22,
+            0.42
+          ]
+        },
+        "offset": [
+          0,
+          0.19,
+          0
+        ]
+      },
+      {
+        "name": "bogieWheelBlockL",
+        "parent": "xCarriage",
+        "collision": "none",
+        "color": [
+          0.18,
+          0.2,
+          0.22
+        ],
+        "metalness": 0.5,
+        "roughness": 0.5,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.28,
+            0.18,
+            0.48
+          ]
+        },
+        "offset": [
+          -0.52,
+          0.14,
+          0
+        ]
+      },
+      {
+        "name": "bogieWheelBlockR",
+        "parent": "xCarriage",
+        "collision": "none",
+        "color": [
+          0.18,
+          0.2,
+          0.22
+        ],
+        "metalness": 0.5,
+        "roughness": 0.5,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.28,
+            0.18,
+            0.48
+          ]
+        },
+        "offset": [
+          0.52,
+          0.14,
+          0
+        ]
+      },
+      {
+        "name": "driveMotorX",
+        "parent": "xCarriage",
+        "collision": "none",
+        "color": [
+          0.72,
+          0.12,
+          0.08
+        ],
+        "metalness": 0.3,
+        "roughness": 0.45,
+        "shape": {
+          "kind": "cylinder",
+          "radius": 0.09,
+          "height": 0.26
+        },
+        "offset": [
+          -0.48,
+          0.34,
+          -0.18
+        ]
+      },
+      {
+        "name": "mastColumnBack",
+        "parent": "xCarriage",
+        "collision": "none",
+        "color": [
+          0.92,
+          0.43,
+          0.03
+        ],
+        "metalness": 0.2,
+        "roughness": 0.42,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.18,
+            5.65,
+            0.26
+          ],
+          "sizeParams": [
+            {
+              "axis": 1,
+              "param": "mastHeight",
+              "scale": 1,
+              "add": 1.15
+            }
+          ]
+        },
+        "offset": [
+          -0.42,
+          2.925,
+          0
+        ],
+        "offsetParams": [
+          {
+            "axis": 1,
+            "param": "mastHeight",
+            "scale": 0.5,
+            "add": 0.67499999
+          }
+        ]
+      },
+      {
+        "name": "mastColumnFront",
+        "parent": "xCarriage",
+        "collision": "none",
+        "color": [
+          0.92,
+          0.43,
+          0.03
+        ],
+        "metalness": 0.2,
+        "roughness": 0.42,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.18,
+            5.65,
+            0.26
+          ],
+          "sizeParams": [
+            {
+              "axis": 1,
+              "param": "mastHeight",
+              "scale": 1,
+              "add": 1.15
+            }
+          ]
+        },
+        "offset": [
+          0.42,
+          2.925,
+          0
+        ],
+        "offsetParams": [
+          {
+            "axis": 1,
+            "param": "mastHeight",
+            "scale": 0.5,
+            "add": 0.67499999
+          }
+        ]
+      },
+      {
+        "name": "mastTopYoke",
+        "parent": "xCarriage",
+        "collision": "none",
+        "color": [
+          0.95,
+          0.68,
+          0.05
+        ],
+        "metalness": 0.2,
+        "roughness": 0.45,
+        "shape": {
+          "kind": "box",
+          "size": [
+            1.08,
+            0.16,
+            0.32
+          ]
+        },
+        "offset": [
+          0,
+          5.69,
+          0
+        ],
+        "offsetParams": [
+          {
+            "axis": 1,
+            "param": "mastHeight",
+            "scale": 1,
+            "add": 1.19
+          }
+        ]
+      },
+      {
+        "name": "mastCabinet",
+        "parent": "xCarriage",
+        "collision": "none",
+        "color": [
+          0.76,
+          0.78,
+          0.8
+        ],
+        "metalness": 0.15,
+        "roughness": 0.5,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.28,
+            0.75,
+            0.34
+          ]
+        },
+        "offset": [
+          -0.66,
+          0.75,
+          0
+        ]
+      },
+      {
+        "name": "statusPanel",
+        "parent": "xCarriage",
+        "collision": "none",
+        "color": [
+          0.14,
+          0.16,
+          0.18
+        ],
+        "metalness": 0.3,
+        "roughness": 0.5,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.04,
+            0.36,
+            0.26
+          ]
+        },
+        "offset": [
+          -0.81,
+          0.82,
+          0
+        ]
+      },
+      {
+        "name": "lampMovingXBox",
+        "parent": "xCarriage",
+        "collision": "none",
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.015,
+            0.03,
+            0.03
+          ]
+        },
+        "offset": [
+          -0.835,
+          0.94,
+          -0.08
+        ],
+        "lamps": [
+          {
+            "name": "movingXLamp",
+            "emissive": [
+              1,
+              0.75,
+              0.05
+            ],
+            "offColor": [
+              0.22,
+              0.16,
+              0.03
+            ]
+          }
+        ]
+      },
+      {
+        "name": "lampMovingZBox",
+        "parent": "xCarriage",
+        "collision": "none",
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.015,
+            0.03,
+            0.03
+          ]
+        },
+        "offset": [
+          -0.835,
+          0.94,
+          -0.025
+        ],
+        "lamps": [
+          {
+            "name": "movingZLamp",
+            "emissive": [
+              0.1,
+              0.75,
+              1
+            ],
+            "offColor": [
+              0.03,
+              0.16,
+              0.22
+            ]
+          }
+        ]
+      },
+      {
+        "name": "lampLiftBox",
+        "parent": "xCarriage",
+        "collision": "none",
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.015,
+            0.03,
+            0.03
+          ]
+        },
+        "offset": [
+          -0.835,
+          0.94,
+          0.03
+        ],
+        "lamps": [
+          {
+            "name": "liftLamp",
+            "emissive": [
+              0.1,
+              0.95,
+              0.3
+            ],
+            "offColor": [
+              0.03,
+              0.2,
+              0.07
+            ]
+          }
+        ]
+      },
+      {
+        "name": "lampLoadedBox",
+        "parent": "xCarriage",
+        "collision": "none",
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.015,
+            0.03,
+            0.03
+          ]
+        },
+        "offset": [
+          -0.835,
+          0.94,
+          0.085
+        ],
+        "lamps": [
+          {
+            "name": "loadedLamp",
+            "emissive": [
+              0.95,
+              0.2,
+              0.9
+            ],
+            "offColor": [
+              0.2,
+              0.04,
+              0.18
+            ]
+          }
+        ]
+      },
+      {
+        "name": "craneDisplayLabel",
+        "parent": "xCarriage",
+        "collision": "none",
+        "color": [
+          0.1,
+          0.95,
+          0.4
+        ],
+        "offset": [
+          -0.832,
+          0.76,
+          0
+        ],
+        "quat": [
+          0,
+          -0.70710678,
+          0,
+          0.70710678
+        ],
+        "shape": {
+          "kind": "label",
+          "size": [
+            0.22,
+            0.07
+          ],
+          "textFrom": "craneDisplay"
+        }
+      },
+      {
+        "name": "yCarriage",
+        "parent": "xCarriage",
+        "shape": {
+          "kind": "frame"
+        },
+        "offset": [
+          0,
+          0.8,
+          0
+        ]
+      },
+      {
+        "name": "cradleBed",
+        "parent": "yCarriage",
+        "collision": "none",
+        "color": [
+          0.22,
+          0.25,
+          0.28
+        ],
+        "metalness": 0.5,
+        "roughness": 0.42,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.76,
+            0.08,
+            0.76
+          ]
+        },
+        "offset": [
+          0,
+          -0.07,
+          0
+        ]
+      },
+      {
+        "name": "sideShieldBack",
+        "parent": "yCarriage",
+        "collision": "none",
+        "color": [
+          0.52,
+          0.56,
+          0.6
+        ],
+        "metalness": 0.45,
+        "roughness": 0.45,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.04,
+            0.34,
+            0.74
+          ]
+        },
+        "offset": [
+          -0.36,
+          0.14,
+          0
+        ]
+      },
+      {
+        "name": "sideShieldFront",
+        "parent": "yCarriage",
+        "collision": "none",
+        "color": [
+          0.52,
+          0.56,
+          0.6
+        ],
+        "metalness": 0.45,
+        "roughness": 0.45,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.04,
+            0.34,
+            0.74
+          ]
+        },
+        "offset": [
+          0.36,
+          0.14,
+          0
+        ]
+      },
+      {
+        "name": "zForks",
+        "parent": "yCarriage",
+        "shape": {
+          "kind": "frame"
+        },
+        "offset": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "name": "shuttleCenterPlate",
+        "parent": "zForks",
+        "collision": "none",
+        "color": [
+          0.32,
+          0.35,
+          0.38
+        ],
+        "metalness": 0.55,
+        "roughness": 0.38,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.58,
+            0.03,
+            0.72
+          ]
+        },
+        "offset": [
+          0,
+          -0.025,
+          0
+        ]
+      },
+      {
+        "name": "forkBladeBack",
+        "parent": "zForks",
+        "collision": "none",
+        "color": [
+          0.68,
+          0.72,
+          0.76
+        ],
+        "metalness": 0.75,
+        "roughness": 0.25,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.12,
+            0.036,
+            0.78
+          ]
+        },
+        "offset": [
+          -0.18,
+          -0.018,
+          0
+        ]
+      },
+      {
+        "name": "forkBladeFront",
+        "parent": "zForks",
+        "collision": "none",
+        "color": [
+          0.68,
+          0.72,
+          0.76
+        ],
+        "metalness": 0.75,
+        "roughness": 0.25,
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.12,
+            0.036,
+            0.78
+          ]
+        },
+        "offset": [
+          0.18,
+          -0.018,
+          0
+        ]
+      },
+      {
+        "name": "forkGrip",
+        "parent": "zForks",
+        "shape": {
+          "kind": "frame"
+        },
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "grip": {
+          "zone": {
+            "size": [
+              0.75,
+              0.65,
+              0.75
+            ],
+            "offset": [
+              0,
+              0.3,
+              0
+            ]
+          }
+        }
+      },
+      {
+        "name": "forkSensorEye",
+        "parent": "zForks",
+        "shape": {
+          "kind": "frame"
+        },
+        "offset": [
+          0,
+          -0.01,
+          0
+        ],
+        "beam": {
+          "range": 0.35,
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "showParam": "enableComms"
+        }
+      }
+    ]
+  },
+  "materials": [
+    {
+      "id": "mastOrange",
+      "color": [
+        0.92,
+        0.43,
+        0.03
+      ],
+      "metalness": 0.2,
+      "roughness": 0.42
+    },
+    {
+      "id": "bogieYellow",
+      "color": [
+        0.95,
+        0.68,
+        0.05
+      ],
+      "metalness": 0.18,
+      "roughness": 0.45
+    },
+    {
+      "id": "portalDark",
+      "color": [
+        0.14,
+        0.16,
+        0.18
+      ],
+      "metalness": 0.55,
+      "roughness": 0.48
+    },
+    {
+      "id": "carriageSteel",
+      "color": [
+        0.24,
+        0.27,
+        0.3
+      ],
+      "metalness": 0.5,
+      "roughness": 0.42
+    },
+    {
+      "id": "forkSteel",
+      "color": [
+        0.62,
+        0.66,
+        0.7
+      ],
+      "metalness": 0.7,
+      "roughness": 0.28
+    },
+    {
+      "id": "motorRed",
+      "color": [
+        0.72,
+        0.12,
+        0.08
+      ],
+      "metalness": 0.3,
+      "roughness": 0.45
+    },
+    {
+      "id": "cabinetGrey",
+      "color": [
+        0.76,
+        0.78,
+        0.8
+      ],
+      "metalness": 0.15,
+      "roughness": 0.5
+    }
+  ]
+}
